@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  dummy:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-05-17T06:09:37.076250344Z"
+    description: A dummy Helm chart for testing purposes only
+    digest: 788055abfcab76f7abf72b32e9d15329a2f3cb3ec6be4e5f9a7ca151f613b315
+    name: dummy
+    type: application
+    urls:
+    - https://github.com/trollscout/helm-charts/releases/download/dummy-0.1.0/dummy-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-17T06:09:37.076255745Z"
