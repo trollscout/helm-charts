@@ -40,6 +40,9 @@ service:
   type: ClusterIP
   port: 80
 
+nodeport:
+  port: 32080
+
 ingress:
   enabled: false
   className: ""
