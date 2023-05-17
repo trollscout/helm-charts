@@ -1,0 +1,6 @@
+apiVersion: v2
+name: medlemslistor
+description: Ett Helm chart för ett cron jobb för att skapa medlemslistor
+type: application
+version: 0.9.0
+appVersion: "0.9.0"

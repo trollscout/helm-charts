@@ -1,0 +1,25 @@
+# Default values for medlemslistor.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+cronSchedule: "00 07 * * *"
+
+image:
+  repository: ghcr.io/trollbackens-scoutkar/skapa-medlemslistor
+  tag: main
+  pullPolicy: Always
+
+imageCredentials:
+  registry: ghcr.io
+  username: ""
+  password: ""
+  email: ""
+
+scoutnetCredentials:
+  apiKey: ""
+  pwd: ""
+
+googleCredentials: ""
+
+debug: false

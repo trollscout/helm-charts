@@ -1,0 +1,38 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "medlemslistor.fullname" . }}
+spec:
+  schedule: {{ .Values.cronSchedule | quote }}
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          imagePullSecrets:
+          - name: ghcr-pull-secret
+          containers:
+          - name: {{ .Chart.Name }}
+            image: {{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}
+            imagePullPolicy: {{ .Values.image.pullPolicy }}
+            env:
+              - name: DEBUG
+                value: {{ .Values.debug | quote  }}
+              - name: scoutnet_apikey
+                valueFrom:
+                  secretKeyRef:
+                    name: scoutnet-secrets
+                    key: apikey
+              - name: SCOUTNET_PWD
+                valueFrom:
+                  secretKeyRef:
+                    name: scoutnet-secrets
+                    key: pwd
+              - name: GDriveCreds
+                valueFrom:
+                  secretKeyRef:
+                    name: google-secrets
+                    key: GDriveCreds
