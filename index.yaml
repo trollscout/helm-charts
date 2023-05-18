@@ -24,6 +24,16 @@ entries:
   medlemslistor:
   - apiVersion: v2
     appVersion: 0.9.0
+    created: "2023-05-18T11:58:01.69388487Z"
+    description: Ett Helm chart för ett cron jobb för att skapa medlemslistor
+    digest: 0282a53d8024e4e395aa6155f6bbaba6a8d9090e9adf2c9d3d1432e1de14503e
+    name: medlemslistor
+    type: application
+    urls:
+    - https://github.com/trollscout/helm-charts/releases/download/medlemslistor-0.9.1/medlemslistor-0.9.1.tgz
+    version: 0.9.1
+  - apiVersion: v2
+    appVersion: 0.9.0
     created: "2023-05-17T21:02:57.564305825Z"
     description: Ett Helm chart för ett cron jobb för att skapa medlemslistor
     digest: c8199ed53688c51be83351b526074fe3f505590d765df7fec8d67573508224a7
@@ -32,4 +42,4 @@ entries:
     urls:
     - https://github.com/trollscout/helm-charts/releases/download/medlemslistor-0.9.0/medlemslistor-0.9.0.tgz
     version: 0.9.0
-generated: "2023-05-17T21:02:57.564315325Z"
+generated: "2023-05-18T11:58:01.693894271Z"
