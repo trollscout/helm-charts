@@ -3,6 +3,20 @@ entries:
   dummy:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-05-18T12:04:20.709225758Z"
+    dependencies:
+    - name: mediawiki
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    description: A dummy Helm chart for testing purposes only
+    digest: dcc5c05553bfd0c219253329162e583921993772990d05c832f01251225c7a83
+    name: dummy
+    type: application
+    urls:
+    - https://github.com/trollscout/helm-charts/releases/download/dummy-0.3.1/dummy-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-05-17T11:44:02.149776969Z"
     description: A dummy Helm chart for testing purposes only
     digest: e7edbc5ea1c46d2caa0f5238d7d54608e410c8641314d212a8ceb60e3668bbda
@@ -42,4 +56,4 @@ entries:
     urls:
     - https://github.com/trollscout/helm-charts/releases/download/medlemslistor-0.9.0/medlemslistor-0.9.0.tgz
     version: 0.9.0
-generated: "2023-05-18T11:58:01.693894271Z"
+generated: "2023-05-18T12:04:20.709248358Z"
